@@ -1,8 +1,13 @@
+import UpdateWhenClick from "./components/UpdateWhenClick"
+
 function App() {
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <div>
+        Hello
+      </div>
+      <UpdateWhenClick/>
+    </>
   )
 }
 
