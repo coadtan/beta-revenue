@@ -1,12 +1,11 @@
-import UpdateWhenClick from "./components/UpdateWhenClick"
+import LoginPage from "./pages/LoginPage"
 
 function App() {
   return (
     <>
       <div>
-        Hello
+        <LoginPage/>
       </div>
-      <UpdateWhenClick/>
     </>
   )
 }
