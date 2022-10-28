@@ -1,10 +1,7 @@
-
 function LoginPage() {
   return (
-    <> 
-      <div className="bg-red-500">
-       login
-      </div>
+    <>
+      <div className="bg-red-500 font-bold">login</div>
     </>
   )
 }
