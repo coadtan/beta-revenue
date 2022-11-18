@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import signUp from '../assets/signUp.png'
-// @ts-ignore
 import { supabase } from '../libs/supabase-client'
 
 function SignUpPage() {

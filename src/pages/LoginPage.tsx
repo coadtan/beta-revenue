@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
-import imageLogo from '/Users/milly/beta-revenue/src/assets/imageLogo.png'
+import imageLogo from '../assets/imageLogo.png'
 
 function LoginPage() {
   const [userName, setUserName] = useState<string>('')
