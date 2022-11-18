@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import signUp from '/Users/milly/beta-revenue/src/assets/signUp.png'
+import signUp from '../assets/signUp.png'
+// @ts-ignore
+import { supabase } from '../libs/supabase-client'
 
 function SignUpPage() {
   const [email, setEmail] = useState<string>('')
   const [userName, setUserName] = useState<string>('')
   const [password, setPassword] = useState<string>('')
-  const signup = () => {
+  const signup = async () => {
     console.log({ userName })
     console.log({ password })
-    const a = 
+    const { data, error } = await supabase.auth.signUp({
+      email: userName,
+      password: password,
+    })
   }
   return (
     <>
@@ -55,7 +60,7 @@ function SignUpPage() {
               </div>
               <div>
                 <button
-                  onClick={() => cancel()}
+                  // onClick={() => cancel()}
                   className="rounded-md border-2 border-slate-300 bg-slate-300 p-1 hover:border-amber-400 hover:bg-amber-400"
                 >
                   <text className="text-white">Cancel</text>

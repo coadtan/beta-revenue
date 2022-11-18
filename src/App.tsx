@@ -1,10 +1,10 @@
-import LoginPage from "./pages/LoginPage"
+import TestPage from './pages/TestPage'
 
 function App() {
   return (
     <>
       <div>
-        <LoginPage/>
+        <TestPage message="hahaha" age={6} />
       </div>
     </>
   )
